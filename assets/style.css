@@ -291,10 +291,98 @@ hr {
     font-size: 1.2rem;
     padding: 0.5em 3em;
   }
+}
 
-  #flex-for-columns {
-    display: flex;
-    justify-content: space-evenly;
+/* Seperate Pages */
+
+#service-details {
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.service-details-parent-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-details-card {
+  padding: 2em;
+  margin: 2em auto;
+  width: 100%;
+  height: 100%;
+}
+
+.service-details-card h3 {
+  margin-bottom: 1em;
+}
+
+.service-details-card h2 {
+  margin-bottom: 0.8em;
+}
+
+.services-details-btn {
+  width: 50%;
+  margin: 2em auto 3.5em auto;
+  padding: 1em 2em;
+}
+
+@media screen and (min-width: 1000px) {
+  .service-details-parent-container {
+    display: grid;
+    grid-template-areas:
+      'mainExt mainInt'
+      'paint ceramic'
+      'additional additional';
+    grid-gap: 1.5em;
+  }
+
+  #main-ext {
+    grid-area: mainExt;
+  }
+
+  #main-int {
+    grid-area: mainInt;
+  }
+
+  #paint {
+    grid-area: paint;
+  }
+
+  #ceramic {
+    grid-area: ceramic;
+  }
+
+  #additional {
+    grid-area: additional;
+  }
+
+  .service-details-card {
+    font-size: 1.3rem;
+    padding: 1.3em;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+
+  .service-details-card h3 {
+    padding: 0.5em 0;
+  }
+
+  .service-details-btn {
+    font-size: 1.2rem;
+    padding: 0.5em 3em;
+  }
+
+  .service-details-row-1 {
+    flex: 0 0 50%;
+  }
+
+  .service-details-row-2 {
+    flex: 0 0 50%;
+  }
+
+  .service-details-row-3 {
+    flex: 0 0 100%;
   }
 }
 
@@ -315,68 +403,4 @@ hr {
 
 .footer-icons a {
   padding-left: 1.5em;
-}
-
-/* Seperate Pages */
-
-#service-details {
-  margin-top: 5em;
-  margin-bottom: 3em;
-}
-
-.services-parent-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.service-card {
-  padding: 2em;
-  margin: 2em auto;
-  width: 100%;
-  height: 100%;
-}
-
-.service-card h3 {
-  margin-bottom: 1em;
-}
-
-.service-card h2 {
-  margin-bottom: 0.8em;
-}
-
-.services-btn {
-  width: 50%;
-  margin: 2em auto 3.5em auto;
-  padding: 1em 2em;
-}
-
-@media screen and (min-width: 1000px) {
-  .services-parent-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1.5em;
-  }
-
-  .service-card {
-    font-size: 1.3rem;
-    padding: 1.3em;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  }
-
-  .service-card h3 {
-    padding: 0.5em 0;
-  }
-
-  .services-btn {
-    font-size: 1.2rem;
-    padding: 0.5em 3em;
-  }
-
-  #flex-for-columns {
-    display: flex;
-    justify-content: space-evenly;
-  }
 }
