@@ -293,7 +293,28 @@ hr {
   }
 }
 
+/* Footer */
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-copy a {
+  text-decoration: underline;
+}
+
+.footer-icons {
+  align-self: center;
+}
+
+.footer-icons a {
+  padding-left: 1.5em;
+}
+
 /* Seperate Pages */
+
+/* Service Details Page */
 
 #service-details {
   margin-top: 3em;
@@ -386,21 +407,80 @@ hr {
   }
 }
 
-/* Footer */
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+/* Blog Posts Page */
+
+#blog-page-heading {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+  margin-top: 1em;
 }
 
-.footer-copy a {
-  text-decoration: underline;
+#blog-page-heading-ul li {
+  padding-bottom: 2em;
 }
 
-.footer-icons {
-  align-self: center;
+#blog-page-heading-ul a {
+  color: #c8a415;
 }
 
-.footer-icons a {
-  padding-left: 1.5em;
+/* Blog Posts */
+
+.post-main-container * {
+  text-align: left;
+}
+
+.post-main-container {
+  margin: 3em auto;
+}
+
+.post-title,
+.post-subheading,
+.post-main-container ol li {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.post-title,
+.post-subheading {
+  font-weight: 400;
+}
+
+.post-main-container ol li {
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding-bottom: 0.3em;
+  padding-left: 0.5em;
+}
+
+.post-title {
+  margin-bottom: 1em;
+  font-size: 3rem;
+  border-bottom: 1px solid #ffd54f;
+}
+
+.post-subheading {
+  padding-bottom: 0.5em;
+  font-weight: 700;
+  color: #ffd54f;
+}
+
+.post-main-container p {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2.3125em;
+}
+
+.post-main-container ol {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+}
+
+.post-main-container p,
+ol {
+  margin-bottom: 1.5em;
+}
+
+.post-main-container small {
+  color: #ffd54f;
 }
