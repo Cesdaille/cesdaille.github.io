@@ -80,6 +80,10 @@ footer a {
   color: #c8a415;
 }
 
+footer p {
+  font-size: .6rem;
+}
+
 /* Line Spacing  */
 p,
 .process-description li,
