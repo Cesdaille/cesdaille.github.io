@@ -55,7 +55,7 @@ button {
 }
 
 .nav-link {
-  text-decor;
+  text-decoration: none;
 }
 
 #services h2,
@@ -81,7 +81,7 @@ footer a {
 }
 
 footer p {
-  font-size: .4rem;
+  font-size: 0.4rem;
 }
 
 /* Line Spacing  */
