@@ -33,4 +33,5 @@ On a surface level, both processes for cleaning your vehicle are not drastically
 </p>
 
 <small>Respectfully,</small>
+<br>
 <small>Christian from Gallery Detail</small>

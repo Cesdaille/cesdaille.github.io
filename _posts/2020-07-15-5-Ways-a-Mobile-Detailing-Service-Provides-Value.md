@@ -94,4 +94,5 @@ author: Christian
 </p>
 
 <small>Respectfully,</small>
+<br>
 <small>Christian from Gallery Detail</small>
