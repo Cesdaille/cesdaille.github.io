@@ -270,16 +270,6 @@ main {
     top: auto;
   }
 
-  .logo-badge {
-    display: block;
-    position: absolute;
-    border: 1.5px solid #ffd54f;
-    height: 100px;
-    width: 100px;
-    right: 10px;
-    top: 740px;
-  }
-
   .splash-btn {
     display: none;
   }
