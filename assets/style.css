@@ -10,7 +10,8 @@ body {
   background-color: #121212;
 }
 
-a {
+a,
+.nav-link {
   text-decoration: none;
 }
 
@@ -26,40 +27,65 @@ ul {
   display: inline;
 }
 
-@media (min-width: 350px) {
-  #logo {
-    font-size: 1.4rem;
-  }
-}
-
-@media (min-width: 750px) {
-  #logo {
-    font-size: 1.7rem;
-  }
-}
-
-.nav-links,
 p,
-h2,
-li,
-button {
+li {
   font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 400;
   color: white;
 }
 
-.nav-links,
-h2,
-button {
+.services-btn {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 700;
+  background-color: #ffd54f;
+  color: black;
+  border-color: #ffd54f;
+}
+
+#btn-position {
+  position: relative;
+  top: 75%;
+}
+
+.section-title {
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: #ffd54f;
+  font-size: 2rem;
+  margin: 1em 0;
+}
+
+small {
+  font-family: 'PT Sans', sans-serif;
+  color: #c8a415;
+  font-size: 0.9rem;
+}
+
+.alt-small {
+  font-family: 'PT Sans', sans-serif;
+  color: #c8a415;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.alt-small-bold {
+  font-family: 'PT Sans', sans-serif;
+  color: white;
   font-weight: 700;
 }
 
-.nav-link {
-  text-decoration: none;
+.single-alt-small {
+  font-size: 1rem;
+  color: #ffd54f;
+  font-family: 'PT Sans', sans-serif;
 }
 
-#services h2,
-#service-details h2 {
+.alt-title {
+  font-family: 'PT Sans', sans-serif;
+  color: #ffd54f;
+  font-size: 1.8rem;
+}
+
+.focus-text {
   color: #ffd54f;
 }
 
@@ -81,7 +107,40 @@ footer a {
 }
 
 footer p {
-  font-size: 0.6rem;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 350px) {
+  #logo {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #logo {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .alt-title {
+    font-size: 1.5rem;
+  }
+
+  .alt-title {
+    font-size: 2rem;
+  }
+
+  .alt-small,
+  .single-alt-small {
+    font-size: 1.1rem;
+    padding-bottom: 0.4em;
+  }
+
+  #package-options,
+  #single-options {
+    font-size: 1.06rem;
+  }
 }
 
 /* Line Spacing  */
@@ -93,7 +152,7 @@ p,
 
 /* Main is only in the default layout - this holds the rest of the sections */
 main {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -179,6 +238,7 @@ main {
 
   .nav-links-desktop li a {
     color: white;
+    background-color: none;
   }
 
   .nav-link {
@@ -188,124 +248,85 @@ main {
 
 /* Main Content Sections */
 #welcome {
-  height: 80vh;
+  margin-bottom: 6em;
 }
 
-.wel-container {
-  margin-top: 50%;
-  padding: 2em;
+.img-container {
+  top: 3.8em;
+  height: 90vh;
+  background-image: url('/assets/images/front-audi.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
-hr {
-  margin: 1em 0;
-}
-
-.wel-btn {
-  display: block;
-  margin: 4em auto;
-  width: 75%;
-  padding: 1em 2em;
-}
-
-@media screen and (min-width: 1000px) {
-  .wel-btn {
-    display: none;
-  }
-
-  .wel-container {
-    font-size: 2rem;
-    margin-top: 10%;
-    padding: 5em 3em;
-  }
-}
-
-.process-flex-container {
-  display: flex;
-  flex-direction: column;
-  padding: 2em;
-  margin-bottom: 3em;
-}
-
-.process-title {
-  margin-bottom: 1em;
-}
-
-.process-description li {
-  padding-bottom: 1em;
-}
-
-.process-description ul li::before {
-  content: '\2022';
-  color: #ffd54f;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
-}
-
-.process-arrow {
+.logo-badge {
   display: none;
 }
 
 @media screen and (min-width: 1000px) {
-  .process-description ul li::before {
+  .img-container {
+    top: auto;
+  }
+
+  .logo-badge {
+    display: block;
+    position: absolute;
+    border: 1.5px solid #ffd54f;
+    height: 100px;
+    width: 100px;
+    right: 10px;
+    top: 740px;
+  }
+
+  .splash-btn {
     display: none;
   }
+}
 
-  .process-arrow {
-    display: inline;
-    padding-right: 1em;
-  }
+#process {
+  width: 95%;
+  margin: 2em auto;
+}
 
-  .process-flex-container {
-    display: flex;
-    flex-direction: row;
+.process-container {
+  font-size: 1.1rem;
+  padding: 1.3em;
+  margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 1000px) {
+  .process-container {
     align-items: center;
     justify-content: center;
   }
 
-  .process-title {
-    flex-grow: 2;
-  }
-
-  .process-title h2 {
-    text-align: left;
-    margin-left: 9em;
-  }
-
-  .process-description {
-    flex-grow: 3;
-  }
-
-  .process-description li {
-    text-align: left;
-    margin-left: 30%;
+  .process-container p {
+    font-size: 1.4rem;
+    padding: 1em;
   }
 }
 
-#services {
-  margin-top: 15em;
+#package-options {
+  width: 95%;
+  margin: 2em auto;
+}
+
+.package-options-overview {
+  padding: 1em;
   margin-bottom: 3em;
 }
 
-.services-parent-container {
+.package-options-parent {
   display: flex;
   flex-direction: column;
 }
 
-.service-card {
-  padding: 2em;
-  margin: 2em auto;
+.package-options-child {
   width: 100%;
-  height: 100%;
-}
-
-.service-card h3 {
-  margin-bottom: 1em;
-}
-
-.service-card h2 {
-  margin-bottom: 0.8em;
+  margin-bottom: 3em;
+  padding-top: 2em;
 }
 
 .services-btn {
@@ -315,28 +336,78 @@ hr {
 }
 
 @media screen and (min-width: 1000px) {
-  .services-parent-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1.5em;
+  .package-options-parent {
+    display: flex;
+    flex-direction: row;
   }
 
-  .service-card {
-    font-size: 1.3rem;
-    padding: 1.3em;
-    height: 100%;
-    width: 100%;
-    margin: 0;
+  .package-options-child {
+    width: 50%;
+    padding-top: 2em;
+    border: solid 2px #ffd54f;
+    margin: 1.5em;
   }
 
-  .service-card h3 {
-    padding: 0.5em 0;
+  .package-options-overview {
+    font-size: 1.4rem;
   }
 
   .services-btn {
     font-size: 1.2rem;
     padding: 0.5em 3em;
+  }
+}
+
+#single-options {
+  width: 95%;
+  margin: 2em auto;
+}
+
+.single-options-overview {
+  padding: 1em;
+  margin-bottom: 3em;
+}
+
+.single-options-child {
+  width: 100%;
+  margin-bottom: 1em;
+  padding-top: 1.5em;
+}
+
+@media screen and (min-width: 1000px) {
+  #a {
+    grid-area: a;
+  }
+
+  #b {
+    grid-area: b;
+  }
+
+  #c {
+    grid-area: c;
+  }
+
+  #d {
+    grid-area: d;
+  }
+
+  .single-options-parent {
+    display: grid;
+    grid-template-areas:
+      'a b'
+      'c d';
+    border: solid 2px #ffd54f;
+  }
+
+  .single-options-child {
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 1em auto;
+  }
+
+  .single-options-overview {
+    font-size: 1.4rem;
   }
 }
 
@@ -359,98 +430,9 @@ hr {
   padding-left: 1.5em;
 }
 
-/* Seperate Pages */
-
-/* Service Details Page */
-
-#service-details {
-  margin-top: 3em;
-  margin-bottom: 3em;
-}
-
-.service-details-parent-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.service-details-card {
-  padding: 2em;
-  margin: 2em auto;
-  width: 100%;
-  height: 100%;
-}
-
-.service-details-card h3 {
-  margin-bottom: 1em;
-}
-
-.service-details-card h2 {
-  margin-bottom: 0.8em;
-}
-
-.service-details-btn {
-  width: 50%;
-  margin: 3em auto 3.5em auto;
-  padding: 1em 2em;
-}
-
 @media screen and (min-width: 1000px) {
-  .service-details-parent-container {
-    display: grid;
-    grid-template-areas:
-      'mainExt mainInt'
-      'paint ceramic'
-      'additional additional';
-    grid-gap: 1.5em;
-  }
-
-  #main-ext {
-    grid-area: mainExt;
-  }
-
-  #main-int {
-    grid-area: mainInt;
-  }
-
-  #paint {
-    grid-area: paint;
-  }
-
-  #ceramic {
-    grid-area: ceramic;
-  }
-
-  #additional {
-    grid-area: additional;
-  }
-
-  .service-details-card {
-    font-size: 1.3rem;
-    padding: 1.3em;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-  }
-
-  .service-details-card h3 {
-    padding: 0.5em 0;
-  }
-
-  .service-details-btn {
-    font-size: 1.2rem;
-    padding: 0.5em 3em;
-  }
-
-  .service-details-row-1 {
-    flex: 0 0 50%;
-  }
-
-  .service-details-row-2 {
-    flex: 0 0 50%;
-  }
-
-  .service-details-row-3 {
-    flex: 0 0 100%;
+  .footer-container * {
+    font-size: 0.9rem;
   }
 }
 
