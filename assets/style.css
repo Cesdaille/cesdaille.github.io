@@ -254,7 +254,7 @@ main {
 .img-container {
   top: 3.8em;
   height: 90vh;
-  background-image: url('/assets/images/front-audi.jpg');
+  background-image: ('/assets/images/front-audi.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
