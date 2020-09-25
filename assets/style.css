@@ -424,6 +424,11 @@ main {
   .footer-container * {
     font-size: 0.9rem;
   }
+
+  .footer-icons a {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+  }
 }
 
 /* Blog Posts Page */
