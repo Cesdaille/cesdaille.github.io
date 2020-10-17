@@ -64,18 +64,24 @@ small {
   font-family: 'PT Sans', sans-serif;
   color: #c8a415;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.03rem;
 }
 
 .alt-small-bold {
   font-family: 'PT Sans', sans-serif;
-  color: white;
+  color: #ffd54f;
   font-weight: 700;
 }
 
 .single-alt-small {
   font-size: 1rem;
   color: #ffd54f;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.single-alt {
+  font-size: 1.1rem;
+  color: white;
   font-family: 'PT Sans', sans-serif;
 }
 
@@ -300,7 +306,7 @@ main {
 
 #package-options {
   width: 95%;
-  margin: 2em auto;
+  margin: 4.5em auto;
 }
 
 .package-options-overview {
@@ -360,44 +366,31 @@ main {
 
 .single-options-child {
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 1em;
   padding-top: 1.5em;
 }
 
 @media screen and (min-width: 1000px) {
-  #a {
-    grid-area: a;
-  }
-
-  #b {
-    grid-area: b;
-  }
-
-  #c {
-    grid-area: c;
-  }
-
-  #d {
-    grid-area: d;
-  }
-
   .single-options-parent {
-    display: grid;
-    grid-template-areas:
-      'a b'
-      'c d';
+    display: flex;
     border: solid 2px #ffd54f;
   }
 
   .single-options-child {
     width: 90%;
-    justify-content: center;
-    align-items: center;
     margin: 1em auto;
+    flex-direction: row;
   }
 
   .single-options-overview {
     font-size: 1.4rem;
+  }
+
+  #btn-blk {
+    width: 100%;
+    margin: auto;
   }
 }
 
@@ -510,4 +503,33 @@ ol {
 
 .post-main-container small {
   color: #ffd54f;
+}
+
+/* About Page */
+
+.about-text {
+  padding: 2em;
+  font-size: 1.3rem;
+  margin: 4em auto;
+}
+
+.about-container {
+  width: 90%;
+}
+
+/* Detailed Services Page */
+
+#no-border {
+  border: none;
+}
+
+#side-gap {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.divider {
+  width: 50%;
+  color: white;
+  margin: 1.3em auto;
 }
