@@ -523,9 +523,11 @@ ol {
   border: none;
 }
 
-#side-gap {
-  margin-left: 1.5em;
-  margin-right: 1.5em;
+@media screen and (min-width: 1000px) {
+  #side-gap {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+  }
 }
 
 .divider {
