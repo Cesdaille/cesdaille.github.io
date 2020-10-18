@@ -534,3 +534,103 @@ ol {
   color: white;
   margin: 1.3em auto;
 }
+
+/* Contact Form */
+.container {
+  width: 95%;
+  margin: 6em auto 3em auto;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: white;
+  border: solid 2px #ffd54f;
+  padding: 1.5em;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.whysign .logo-box {
+  display: none;
+  margin-bottom: 2em;
+}
+
+.contact-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.whysign {
+  margin: 1em;
+}
+
+.signup {
+  width: 100%;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+[type='text'] {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  border: 0;
+  border-bottom: 1px solid white;
+  height: 3.5em;
+  margin-bottom: 1.5em;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[type='submit'] {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: bold;
+  background-color: #ffd54f;
+  color: black;
+  border: none;
+  width: 95%;
+  padding: 1em 3em;
+}
+
+[type='text']:focus {
+  outline: none;
+  border-color: #ffd54f;
+  color: white;
+}
+
+.contact-heading {
+  font-size: 2.4rem;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media screen and (min-width: 1000px) {
+  .contact-flex {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .whysign {
+    width: 33%;
+  }
+
+  .whysign .logo-box {
+    display: block;
+    margin-bottom: 2em;
+  }
+
+  .contact-logo {
+    display: initial;
+  }
+
+  .signup {
+    width: 50%;
+  }
+
+  [type='text'] {
+    font-size: 1.1rem;
+  }
+
+  [type='submit'] {
+    font-size: 1.2rem;
+  }
+}
